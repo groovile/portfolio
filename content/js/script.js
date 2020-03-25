@@ -114,7 +114,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var countDownDate = new Date("Mar 25, 2020 00:00:00").getTime();
+var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -130,7 +130,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var countDownDate = new Date("Mar 25, 2020 00:00:00").getTime();
+var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -147,7 +147,7 @@ var x = setInterval(function() {
 }, 1000);
 
 var x2 = setInterval(function () {
-    var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Mar 28, 2020 00:00:00").getTime();
     var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -162,7 +162,7 @@ var x2 = setInterval(function () {
 }, 1000);
 
 var x3 = setInterval(function () {
-    var countDownDate = new Date("Mar 28, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Mar 29, 2020 00:00:00").getTime();
     var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -177,7 +177,7 @@ var x3 = setInterval(function () {
 }, 1000);
 
 var x4 = setInterval(function () {
-    var countDownDate = new Date("Mar 29, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Mar 30, 2020 00:00:00").getTime();
     var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -220,18 +220,12 @@ var x5 = setInterval(function () {
         document.getElementById("county6").innerHTML = "";
     }
 }, 1000);
-$.get("commits.atom", function(data) {
-    var $XML = $(data);
-    $XML.find("item").each(function() {
-        var $this = $(this),
-            item = {
-                title:       $this.find("title").text(),
-                link:        $this.find("link").text(),
-                description: $this.find("description").text(),
-                pubDate:     $this.find("pubDate").text(),
-                author:      $this.find("author").text()
-            };
-        $('#atomfeed').append($('<h2/>').text(item.title));
-        //etc...
-    });
-});
+$('#divRss').FeedEk({
+    FeedUrl : 'https://github.com/groovile/portfolio/commits.atom',
+    MaxCount : 5,
+    ShowDesc : false,
+    ShowPubDate:false,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'MM/dd/yyyy',
+    DateFormatLang : 'en'
+  });
