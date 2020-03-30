@@ -35,7 +35,7 @@ $(document).ready(function () {
     //   }
     else{
         $('.home').addClass('tagYoureIt');
-        history.replaceState(null, null, 'http://mikkelmontoya.tk/');
+        history.replaceState(null, null, ' ');
         console.log("6")
     }
     // $('.nlink').click(function (event) {
@@ -52,7 +52,7 @@ $(document).ready(function () {
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
         function newpage() {
             $('.home').addClass('tagYoureIt').fadeIn(300);
-            history.replaceState(null, null, 'www.mikkelmontoya.tk');
+            history.replaceState(null, null, ' ');
         }
     });
     $('.a3dart').click(function (event) {
