@@ -3,13 +3,12 @@
 // });
 
 $(document).ready(function () {
-    $('.home').addClass('tcboo');
+    // $('.home').addClass('tcboo');
     $('.xtraBody').css('opacity', '1');
     $('body').css('display', 'none');
     $('body').fadeIn(1000);
     if (window.location.hash.substr(1) == "3d") {
         $('.f3dart').addClass('tagYoureIt');
-        history.replaceState(null, null, ' ');
     }
     else if (window.location.hash.substr(1) == "music") {
         $('.fmusic').addClass('tagYoureIt');
@@ -28,13 +27,16 @@ $(document).ready(function () {
     }
     else if (window.location.hash.substr(1) == "") {
         $('.home').addClass('tagYoureIt');
+        console.log("5")
     }
-    else if(window.location.hash) {
-        $('.home').addClass('tagYoureIt');
-      }
+    // else if(window.location.hash) {
+    //     $('.home').addClass('tagYoureIt');
+    //     console.log("4")
+    //   }
     else{
         $('.home').addClass('tagYoureIt');
         history.replaceState(null, null, 'http://mikkelmontoya.tk/');
+        console.log("6")
     }
     // $('.nlink').click(function (event) {
     //     event.preventDefault();
@@ -48,23 +50,33 @@ $(document).ready(function () {
     // });
     $('.ahome').click(function (event) {
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        console.log("one");
         function newpage() {
+            event.preventDefault();
             $('.home').addClass('tagYoureIt').fadeIn(300);
             history.replaceState(null, null, 'http://mikkelmontoya.tk/');
+            console.log("1")
+        }
+        if (!$(".tagYoureIt")[0]){
+            $('.home').addClass('tagYoureIt').fadeIn(300);
+            console.log("couldn't find any, so I added it.")
         }
     });
     $('.a3dart').click(function (event) {
 
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        console.log("two");
         function newpage() {
             $('.f3dart').addClass('tagYoureIt').fadeIn(300);
+            console.log("2")
         }
     });
     $('.amusic').click(function (event) {
-
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        console.log("three");
         function newpage() {
             $('.fmusic').addClass('tagYoureIt').fadeIn(300);
+            console.log("3")
         }
     });
     $('.a2dart').click(function (event) {
