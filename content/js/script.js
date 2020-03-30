@@ -50,16 +50,9 @@ $(document).ready(function () {
     // });
     $('.ahome').click(function (event) {
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
-        console.log("one");
         function newpage() {
-            event.preventDefault();
             $('.home').addClass('tagYoureIt').fadeIn(300);
-            history.replaceState(null, null, 'http://mikkelmontoya.tk/');
-            console.log("1")
-        }
-        if (!$(".tagYoureIt")[0]){
-            $('.home').addClass('tagYoureIt').fadeIn(300);
-            console.log("couldn't find any, so I added it.")
+            history.replaceState(null, null, 'www.mikkelmontoya.tk');
         }
     });
     $('.a3dart').click(function (event) {
