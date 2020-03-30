@@ -276,7 +276,7 @@ transform-style: preserve-3d;
     background-repeat:no-repeat;
     box-shadow: 0px 0px 30px 10px rgba(17, 17, 17, 0), inset 0 0 4em rgba(93, 93, 93, 0.8);
     transition: box-shadow 0.3s ease-out, transform 1s ease-out, width 0.7s ease-out, border-color 0.3s ease-out;
-    padding-bottom:40px;
+    padding-bottom:20px;
     margin-bottom:40px;
   }
   .bun, .buds, .bun a, form{
@@ -316,6 +316,9 @@ transform-style: preserve-3d;
   }
   .cursorfix{
     pointer-events:none;
+  }
+  .page{
+    display:none; 
   }
   center{
     margin:0 auto;
@@ -657,14 +660,17 @@ button:focus{
 } */
 
 .home{
-  display: hidden;
+   display:none; 
+}
+.tagYoureIt{
+  display:block;
 }
 .about{
   display: hidden;
 }
-.tcboo{
+/* .tcboo{
   display:block;
-}
+} */
 
 
 .nowListening{

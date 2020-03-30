@@ -7,15 +7,82 @@ $(document).ready(function () {
     $('.xtraBody').css('opacity', '1');
     $('body').css('display', 'none');
     $('body').fadeIn(1000);
-    $('.nlink').click(function (event) {
+    if (window.location.hash.substr(1) == "3d") {
+        $('.f3dart').addClass('tagYoureIt');
+        history.replaceState(null, null, ' ');
+    }
+    else if (window.location.hash.substr(1) == "music") {
+        $('.fmusic').addClass('tagYoureIt');
+    }
+    else if (window.location.hash.substr(1) == "2d") {
+        $('.f2dart').addClass('tagYoureIt');
+    }
+    else if (window.location.hash.substr(1) == "music") {
+        $('.fsound').addClass('tagYoureIt');
+    }
+    else if (window.location.hash.substr(1) == "code") {
+        $('.fcode').addClass('tagYoureIt');
+    }
+    else if (window.location.hash.substr(1) == "animation") {
+        $('.fanimation').addClass('tagYoureIt');
+    }
+    else{
         event.preventDefault();
-        newLocation = $(this).attr("href");
-        $('.menu2').fadeOut(300, newpage);
+        $('.home').addClass('tagYoureIt');
+        history.replaceState(null, null, 'http://mikkelmontoya.tk/');
+    }
+    // $('.nlink').click(function (event) {
+    //     event.preventDefault();
+    //     newLocation = $(this).attr("href");
+    //     $('.home').fadeOut(300, newpage);
+    //     function newpage() {
+    //         //window.location = newLocation;
+    //         window.location.href.split('#')[0]
+    //         $('.f3dart').fadeIn(300);
+    //     }
+    // });
+    $('.ahome').click(function (event) {
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
         function newpage() {
-            window.location = newLocation;
+            $('.home').addClass('tagYoureIt').fadeIn(300);
+            history.replaceState(null, null, 'http://mikkelmontoya.tk/');
         }
     });
+    $('.a3dart').click(function (event) {
 
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.f3dart').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
+    $('.amusic').click(function (event) {
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fmusic').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
+    $('.a2dart').click(function (event) {
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.f2dart').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
+    $('.asound').click(function (event) {
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fsound').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
+    $('.acode').click(function (event) {
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fcode').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
     
 });
 
