@@ -314,6 +314,9 @@ transform-style: preserve-3d;
     margin: 0 130px 20px 0;
     background-color: #6e6e6e;
   }
+  .cursorfix{
+    pointer-events:none;
+  }
   center{
     margin:0 auto;
     vertical-align: middle;
