@@ -26,8 +26,13 @@ $(document).ready(function () {
     else if (window.location.hash.substr(1) == "animation") {
         $('.fanimation').addClass('tagYoureIt');
     }
+    else if (window.location.hash.substr(1) == "") {
+        $('.home').addClass('tagYoureIt');
+    }
+    else if(window.location.hash) {
+        $('.home').addClass('tagYoureIt');
+      }
     else{
-        event.preventDefault();
         $('.home').addClass('tagYoureIt');
         history.replaceState(null, null, 'http://mikkelmontoya.tk/');
     }
