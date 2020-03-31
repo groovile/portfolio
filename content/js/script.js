@@ -93,6 +93,13 @@ $(document).ready(function () {
             $('.fcode').addClass('tagYoureIt').fadeIn(300);
         }
     });
+    $('.aanimation').click(function (event) {
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fanimation').addClass('tagYoureIt').fadeIn(300);
+        }
+    });
     
 });
 
@@ -305,4 +312,29 @@ $('#divRss').FeedEk({
     TitleLinkTarget:'_blank',
     DateFormat : 'MM/dd/yyyy',
     DateFormatLang : 'en'
+  });
+
+  new jBox('Modal', {
+    theme: "TooltipDark",
+    width: 300,
+    height: 100,
+    attach: '#emailModal',
+    title: 'My E-mail address:',
+    content: '<i>lumitrap@gmail.com</i>'
+  });
+  new jBox('Modal', {
+    theme: "TooltipDark",
+    width: 160,
+    height: 80,
+    attach: '#discordModal',
+    title: 'My Discord Tag:',
+    content: '<i>Bacontrap#7631</i>'
+  });
+  new jBox('Modal', {
+    theme: "TooltipDark",
+    width: 325,
+    height: 100,
+    attach: '#skypeModal',
+    title: 'Skype name:',
+    content: '<i>To add me on skype,<br/>please contact me through other methods. Thanks!</i>'
   });

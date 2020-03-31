@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1c1c1c" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href="content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="content/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <link href="content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="content/plugins/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="content/js/FeedEk.js"></script>
     <link href="content/css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='icon' href='content/img/favicon.ico' type='image/x-icon'/ >
     <link rel="alternate" type="application/atom+xml" title="RSS feed for mportfolio" href="https://github.com/groovile/portfolio/commits.atom" />
+    <link href="content/plugins/jBox/jBox.all.min.css" rel="stylesheet" />
+    <link href="content/plugins/jBox/jBox.TooltipDark.css" rel="stylesheet" />
+    <script type="text/javascript" src="content/plugins/jBox/jBox.all.min.js"></script>
     <title>Mikkel Montoya</title>
 </head>
 <body>
@@ -59,10 +63,11 @@
                 <div id="spotify-player-wrapper"></div>
              -->
              <div class="margin:0 auto;">
-                    <a href="javascript:void(0)"><img class="icon" src="content/img/mail.png" alt="mail"></a>
-                    <a href="javascript:void(0)"><img class="icon" src="content/img/skype.png" alt="skype"></a>
-                    <a href="javascript:void(0)"><img class="icon" src="content/img/discord.png" alt="discord"></a>
-                    <a href="javascript:void(0)"><img class="icon" src="content/img/twitter.png" alt="twitter"></a>
+                    <a id="emailModal" href="javascript:void(0)"><img class="icon" src="content/img/mail.png" alt="mail"></a>
+                    <a id="discordModal" href="javascript:void(0)"><img class="icon" src="content/img/discord.png" alt="discord"></a>
+                    <a href="https://twitter.com/Lumitrap" target="_blank"><img class="icon" src="content/img/twitter.png" alt="twitter"></a>
+                    <a id="skypeModal" href="javascript:void(0)"><img class="icon" src="content/img/skype.png" alt="skype"></a>
+                    <a href="https://steamcommunity.com/id/Shadetrap/" target="_blank"><img class="icon" src="content/img/steam.png" alt="steam"></a>
              </div>
             </div>
             
@@ -252,11 +257,14 @@
                         <div class="item">
             
                             <div class="iDesc">
-                                <a href="http://lumitrap.tk/">Lumitrap</a><br />
-                                <a href="http://mikkelmontoya.tk/">Mikkel Montoya Portfolio</a><br />
-                                <a href="http://beepsync.tk/">BeepSync</a><br />
-                                <a href="http://www.beeptweet.tk/#beepboxco">BeepTweet</a><br />
-                                <a href="http://www.monotrap.tk/">Advanced sentence generator</a><br />
+                                <a href="http://lumitrap.tk/" target="_blank">Lumitrap</a><br />
+                                <a href="http://mikkelmontoya.tk/" target="_blank">Mikkel Montoya Portfolio</a><br />
+                                <a href="http://beepsync.tk/" target="_blank">BeepSync</a><br />
+                                <a href="http://www.beeptweet.tk/#beepboxco" target="_blank">BeepTweet</a><br />
+                                <a href="http://www.monotrap.tk/" target="_blank">Advanced story generator</a><br />
+                                <br />
+                                <br />
+                                I'm aware some links are down. They are my next concern!
                             </div>
                         </div>
                         <br />
@@ -264,8 +272,26 @@
                     </div>
                 </div>
                 <div class="page fanimation">
-                        
+                    <div class="pm">
+                        <p class="phr0">Animation</p>
+                        <hr>
+                        <div class="item">
+                            <div class="iTitle">Thriller Dance Mockup</div>
+                
+                            <div class="video-container"><iframe width="853" height="480"
+                                    src="https://www.youtube.com/embed/d4mmLWUuw3M?start=5" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br /><br />
+                            <div class="video-container"><iframe width="853" height="480"
+                                    src="https://www.youtube.com/embed/-EUaeVyB6MM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br /><br />
+                            <div class="video-container"><iframe width="853" height="480"
+                                    src="https://www.youtube.com/embed/iPNHmfZHY4M" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
                 <!-- <a href="#">
                             <div class="bun bc8">
