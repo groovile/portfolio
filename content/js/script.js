@@ -338,3 +338,34 @@ $('#divRss').FeedEk({
     title: 'Skype name:',
     content: '<i>To add me on skype,<br/>please contact me through other methods. Thanks!</i>'
   });
+
+  new jBox('Tooltip', {
+    attach: '.tooltip1',
+    theme: "TooltipDark",
+    delayOpen:0,
+  });
+  new jBox('Tooltip', {
+    attach: '.tooltip2',
+    theme: "TooltipDark",
+    delayOpen:0,
+  });
+  new jBox('Tooltip', {
+    attach: '.tooltip3',
+    theme: "TooltipDark",
+    delayOpen:0,
+  });
+  new jBox('Tooltip', {
+    attach: '.tooltip4',
+    theme: "TooltipDark",
+    delayOpen:0,
+  });
+  new jBox('Tooltip', {
+    attach: '.tooltip5',
+    theme: "TooltipDark",
+    delayOpen:0,
+  });
+
+  $('#nContact').hover(
+    function(){ $(".icon").addClass('playa') },
+    function(){ $(".icon").removeClass('playa') }
+)
