@@ -9,21 +9,27 @@ $(document).ready(function () {
     $('body').fadeIn(1000);
     if (window.location.hash.substr(1) == "3d") {
         $('.f3dart').addClass('tagYoureIt');
+        $('.n3D').addClass("active");
     }
     else if (window.location.hash.substr(1) == "music") {
         $('.fmusic').addClass('tagYoureIt');
+        $('.nMusic').addClass("active");
     }
     else if (window.location.hash.substr(1) == "2d") {
         $('.f2dart').addClass('tagYoureIt');
+        $('.n2D').addClass("active");
     }
-    else if (window.location.hash.substr(1) == "music") {
+    else if (window.location.hash.substr(1) == "sound") {
         $('.fsound').addClass('tagYoureIt');
+        $('.nSound').addClass("active");
     }
     else if (window.location.hash.substr(1) == "code") {
         $('.fcode').addClass('tagYoureIt');
+        $('.nCode').addClass("active");
     }
     else if (window.location.hash.substr(1) == "animation") {
         $('.fanimation').addClass('tagYoureIt');
+        $('.nAnimation').addClass("active");
     }
     else if (window.location.hash.substr(1) == "") {
         $('.home').addClass('tagYoureIt');
@@ -54,6 +60,7 @@ $(document).ready(function () {
             $('.home').addClass('tagYoureIt').fadeIn(300);
             history.replaceState(null, null, ' ');
         }
+        $(".sl").removeClass("active");
     });
     $('.a3dart').click(function (event) {
 
@@ -106,9 +113,8 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
-    $("a").click(function() {
-      $(".mainLinks a.active, .subLinks a.active").removeClass("active");
-      $(".mainLinks a b, .subLinks a.active").removeClass("active");
+    $(".sl").click(function() {
+      $(".sl").removeClass("active");
       $(this).addClass("active");
     });
 });
@@ -181,129 +187,129 @@ setInterval(function() {
             };
         });
     })(document, window);
-}, 1000);
-var countDownDate = new Date("Mar 25, 2020 00:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-  document.getElementById("county1").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("county1").innerHTML = "";
-  }
-}, 1000);
+}, 0);
+// var countDownDate = new Date("Mar 25, 2020 00:00:00").getTime();
+// var x = setInterval(function() {
+//   var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//   document.getElementById("county1").innerHTML = hours + "h "
+//   + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("county1").innerHTML = "";
+//   }
+// }, 1000);
 
-var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-  document.getElementById("county01").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("county01").innerHTML = "";
-  }
-}, 1000);
+// var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
+// var x = setInterval(function() {
+//   var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//   document.getElementById("county01").innerHTML = hours + "h "
+//   + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("county01").innerHTML = "";
+//   }
+// }, 1000);
 
-var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-  document.getElementById("county001").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("county001").innerHTML = "";
-  }
-}, 1000);
+// var countDownDate = new Date("Mar 27, 2020 00:00:00").getTime();
+// var x = setInterval(function() {
+//   var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//   document.getElementById("county001").innerHTML = hours + "h "
+//   + minutes + "m " + seconds + "s ";  // If the count down is over, write some text 
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("county001").innerHTML = "";
+//   }
+// }, 1000);
 
-var x2 = setInterval(function () {
-    var countDownDate = new Date("Mar 28, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-    document.getElementById("county2").innerHTML = hours + "h ";
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("county2").innerHTML = "";
-    }
-}, 1000);
+// var x2 = setInterval(function () {
+//     var countDownDate = new Date("Mar 28, 2020 00:00:00").getTime();
+//     var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//     document.getElementById("county2").innerHTML = hours + "h ";
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("county2").innerHTML = "";
+//     }
+// }, 1000);
 
-var x3 = setInterval(function () {
-    var countDownDate = new Date("Mar 29, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-    document.getElementById("county3").innerHTML = hours + "h " ;
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("county3").innerHTML = "";
-    }
-}, 1000);
+// var x3 = setInterval(function () {
+//     var countDownDate = new Date("Mar 29, 2020 00:00:00").getTime();
+//     var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//     document.getElementById("county3").innerHTML = hours + "h " ;
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("county3").innerHTML = "";
+//     }
+// }, 1000);
 
-var x4 = setInterval(function () {
-    var countDownDate = new Date("Mar 30, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-    document.getElementById("county4").innerHTML = hours + "h " ;
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("county4").innerHTML = "";
-    }
-}, 1000);
+// var x4 = setInterval(function () {
+//     var countDownDate = new Date("Mar 30, 2020 00:00:00").getTime();
+//     var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//     document.getElementById("county4").innerHTML = hours + "h " ;
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("county4").innerHTML = "";
+//     }
+// }, 1000);
 
-var x5 = setInterval(function () {
-    var countDownDate = new Date("Mar 30, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-    document.getElementById("county5").innerHTML = hours + "h " ;
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("county5").innerHTML = "";
-    }
-}, 1000);
+// var x5 = setInterval(function () {
+//     var countDownDate = new Date("Mar 30, 2020 00:00:00").getTime();
+//     var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//     document.getElementById("county5").innerHTML = hours + "h " ;
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("county5").innerHTML = "";
+//     }
+// }, 1000);
 
-var x5 = setInterval(function () {
-    var countDownDate = new Date("Mar 31, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
-    document.getElementById("county6").innerHTML = hours + "h " ;
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("county6").innerHTML = "";
-    }
-}, 1000);
+// var x5 = setInterval(function () {
+//     var countDownDate = new Date("Mar 31, 2020 00:00:00").getTime();
+//     var now = new Date().getTime();
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + days * 24);
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);  // Output the result in an element with id="demo"
+//     document.getElementById("county6").innerHTML = hours + "h " ;
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("county6").innerHTML = "";
+//     }
+// }, 1000);
 $('#divRss').FeedEk({
     FeedUrl : 'https://github.com/groovile/portfolio/commits.atom',
     MaxCount : 5,
@@ -369,3 +375,66 @@ $('#divRss').FeedEk({
     function(){ $(".icon").addClass('playa') },
     function(){ $(".icon").removeClass('playa') }
 )
+$( window ).on( 'hashchange', function( e ) {
+    if(window.location.hash.substr(1) == ""){
+        // location.hash = 'music';
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.home').addClass('tagYoureIt').fadeIn(300);
+            history.replaceState(null, null, ' ');
+        }
+        $(".sl").removeClass("active");
+    }
+    else if(window.location.hash.substr(1) == "3d"){
+
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.f3dart').addClass('tagYoureIt').fadeIn(300);
+        }
+        $(".sl").removeClass("active");
+        $('.n3D').addClass("active");
+    }
+    else if(window.location.hash.substr(1) == "music"){
+        // location.hash = 'music';
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        console.log("three");
+        function newpage() {
+            $('.fmusic').addClass('tagYoureIt').fadeIn(300);
+            console.log("3")
+        }
+        $(".sl").removeClass("active");
+        $('.nMusic').addClass("active");
+    }
+    else if(window.location.hash.substr(1) == "2d"){
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.f2dart').addClass('tagYoureIt').fadeIn(300);
+        }
+        $(".sl").removeClass("active");
+        $('.n2D').addClass("active");
+    }
+    else if(window.location.hash.substr(1) == "sound"){
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fsound').addClass('tagYoureIt').fadeIn(300);
+        }
+        $(".sl").removeClass("active");
+        $('.nSound').addClass("active");
+    }
+    else if(window.location.hash.substr(1) == "code"){
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fcode').addClass('tagYoureIt').fadeIn(300);
+        }
+        $(".sl").removeClass("active");
+        $('.nCode').addClass("active");
+    }
+    else if(window.location.hash.substr(1) == "animation"){
+        $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
+        function newpage() {
+            $('.fanimation').addClass('tagYoureIt').fadeIn(300);
+        }
+        $(".sl").removeClass("active");
+        $('.nAnimation').addClass("active");
+    }
+} );
