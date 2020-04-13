@@ -1,12 +1,18 @@
 // $("#preload").load(function(evt){
 //     $(this).fadeIn(1000);
 // });
-
+var v3d = $('.f3dart').html()
+var vMusic = $('.fmusic').html()
+var v2d = $('.f2dart').html()
+var vSound = $('.fsound').html()
+var vCode = $('.fcode').html()
+var vAnimation = $('.fanimation').html()
 $(document).ready(function () {
     // $('.home').addClass('tcboo');
     $('.xtraBody').css('opacity', '1');
     $('body').css('display', 'none');
     $('body').fadeIn(1000);
+    $('.home').fadeIn(1000);
     if (window.location.hash.substr(1) == "3d") {
         $('.f3dart').addClass('tagYoureIt');
         $('.n3D').addClass("active");
@@ -136,7 +142,7 @@ $(function () {
     });
 });
 
-setInterval(function() {
+setTimeout(function() {
     !(function ($doc, $win) {
         var /*screenWidth = $win.screen.width / 2,
             screenHeight = $win.screen.height / 2,*/
@@ -153,37 +159,38 @@ setInterval(function() {
         }
         $doc.addEventListener('mousemove', function (e) {
             var centroX = e.clientX - screenWidth,
-                centroY = screenHeight - (e.clientY + 13),
+                centroY = screenHeight - (e.clientY - 500),
                 degX = centroX * 0.025,
                 degY = centroY * 0.010,
                 $elem
             for (var i = 0; i < $elems.length; i++) {
                 $elem = $elems[i];
-                
+
                 if ($(window).width() < 639) {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX -2.5) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX -6) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'green');
                 }
                 else if ($(window).width() < 1000) {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX -2.5) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX -12) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'blue');
                 }
                 else if ($(window).width() < 1199) {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 7) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 14.5) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'pink');
                 }
                 else if ($(window).width() < 1479) {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 9.5) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 18) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'orange');
                 }
                 else if ($(window).width() < 1599) {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 8.25) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 20) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'purple');
                 }
                 else {
-                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 11.5) + 'deg)  rotateX(' + degY + 'deg)';
+                    $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX - 23) + 'deg)  rotateX(' + degY + 'deg)';
                     // $('body').css('background-color', 'white');
                 }
+                    // $('body').css('background-color', 'white');
             };
         });
     })(document, window);
@@ -384,12 +391,14 @@ $( window ).on( 'hashchange', function( e ) {
             history.replaceState(null, null, ' ');
         }
         $(".sl").removeClass("active");
+        $( ".fmusic" ).empty().html(vMusic);
     }
     else if(window.location.hash.substr(1) == "3d"){
 
         $('.tagYoureIt').removeClass('tagYoureIt').fadeOut(300, newpage);
         function newpage() {
             $('.f3dart').addClass('tagYoureIt').fadeIn(300);
+            $( ".fmusic" ).empty().html(vMusic);
         }
         $(".sl").removeClass("active");
         $('.n3D').addClass("active");

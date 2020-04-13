@@ -663,7 +663,7 @@ button:focus{
    display:none; 
 }
 .tagYoureIt{
-  display:block;
+  /* display:block; This here ruins the js fadeIn fadeOut effect*/
 }
 .about{
   display: hidden;
