@@ -12,7 +12,6 @@ $(document).ready(function () {
     $('.xtraBody').css('opacity', '1');
     $('body').css('display', 'none');
     $('body').fadeIn(1000);
-    $('.home').fadeIn(1000);
     if (window.location.hash.substr(1) == "3d") {
         $('.f3dart').addClass('tagYoureIt');
         $('.n3D').addClass("active");
@@ -50,6 +49,7 @@ $(document).ready(function () {
         history.replaceState(null, null, ' ');
         console.log("6")
     }
+    $('.tagYoureIt').fadeIn(1000);
     // $('.nlink').click(function (event) {
     //     event.preventDefault();
     //     newLocation = $(this).attr("href");
@@ -350,6 +350,14 @@ $('#divRss').FeedEk({
     attach: '#skypeModal',
     title: 'Skype name:',
     content: '<i>To add me on skype,<br/>please contact me through other methods. Thanks!</i>'
+  });
+  new jBox('Modal', {
+    theme: "TooltipDark",
+    width: 325,
+    height: 100,
+    attach: '#brokenlinkModal',
+    title: 'Under construction',
+    content: '<i>Unlike my other sites, this one\'s a wee bit trickier to setup. I hope you\'ll return and check it out some other time...!</i>'
   });
 
   new jBox('Tooltip', {

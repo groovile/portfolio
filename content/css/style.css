@@ -649,7 +649,7 @@ form button{
 }
 a:focus, input:focus, button:focus{
   outline:none;
-  border-color:#f9c959; color:#EEEEEE;
+  /* border-color:#f9c959; color:#EEEEEE; */
 }
 button:focus{
   background-color:#f9c959; color:#FFFFFF;
